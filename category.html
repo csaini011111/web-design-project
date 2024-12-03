@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - CZUNews</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/category.css">
+</head>
+<body>
+    <header id="main-header"></header>
+    
+    <main id="category-content">
+        <nav class="breadcrumb" id="breadcrumb"></nav>
+        
+        <div class="category-header">
+            <h1 class="category-title"></h1>
+            <p class="category-description"></p>
+        </div>
+
+        <div class="category-stats">
+            <div class="stat-card">
+                <h3>Articles</h3>
+                <p class="number" id="articles-count">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Authors</h3>
+                <p class="number" id="authors-count">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Latest Update</h3>
+                <p class="number" id="latest-update">Today</p>
+            </div>
+        </div>
+
+        <div id="category-articles"></div>
+    </main>
+
+    <footer id="main-footer"></footer>
+
+    <script type="module" src="/js/config.js"></script>
+    <script type="module" src="/js/api.js"></script>
+    <script type="module" src="/js/utils.js"></script>
+    <script type="module" src="/js/components/header.js"></script>
+    <script type="module" src="/js/components/footer.js"></script>
+    <script type="module" src="/js/category.js"></script>
+</body>
+</html>

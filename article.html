@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article - FutureNews 2070</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/article.css">
+</head>
+<body>
+    <header id="main-header"></header>
+    
+    <main id="article-content">
+        <nav class="breadcrumb" id="breadcrumb"></nav>
+        <article class="article-detail">
+            <div class="article-header">
+                <span class="category"></span>
+                <h1 class="title"></h1>
+                <div class="meta">
+                    <span class="author"></span>
+                    <span class="date"></span>
+                </div>
+            </div>
+            <div class="article-body">
+                <img class="main-image" alt="">
+                <div class="content"></div>
+            </div>
+            <div class="social-share">
+                <button class="share-btn" data-platform="twitter">Share on Twitter</button>
+                <button class="share-btn" data-platform="facebook">Share on Facebook</button>
+            </div>
+        </article>
+        
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comments-list"></div>
+            <form id="comment-form">
+                <textarea placeholder="Add your comment"></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+
+        <section class="related-articles">
+            <h3>Related Articles</h3>
+            <div class="articles-grid"></div>
+        </section>
+    </main>
+
+    <footer id="main-footer"></footer>
+
+    <script type="module" src="/js/config.js"></script>
+    <script type="module" src="/js/api.js"></script>
+    <script type="module" src="/js/utils.js"></script>
+    <script type="module" src="/js/components/header.js"></script>
+    <script type="module" src="/js/components/footer.js"></script>
+    <script type="module" src="/js/article.js"></script>
+</body>
+</html>

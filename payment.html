@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - CZUNews</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/payment.css">
+</head>
+<body>
+    <header id="main-header"></header>
+    
+    <main id="payment-content">
+        <h1>Complete Your Subscription</h1>
+        <div class="payment-methods">
+            <div class="payment-option">
+                <h2>Credit Card</h2>
+                <form class="payment-form">
+                    <div class="form-group">
+                        <label>Card Number</label>
+                        <input type="text" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label>CVV</label>
+                            <input type="text" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Pay Now</button>
+                </form>
+            </div>
+            
+            <div class="payment-option">
+                <h2>Google Pay</h2>
+                <button class="gpay-button">
+                    <img src="/images/gpay.png" alt="Google Pay">
+                    Pay with Google Pay
+                </button>
+            </div>
+            
+            <div class="payment-option">
+                <h2>QR Payment</h2>
+                <div class="qr-code">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=CZUNews-Payment" alt="QR Code">
+                    <p>Scan with your banking app</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer"></footer>
+
+    <script type="module" src="/js/components/header.js"></script>
+    <script type="module" src="/js/components/footer.js"></script>
+</body>
+</html>
